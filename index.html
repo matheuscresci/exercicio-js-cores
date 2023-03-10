@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    body {
+      max-width: 100%;
+      min-height: 100%;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      font-family: sans-serif;
+      margin-top: 70px;
+    }
+
+    h1.title-style {
+      text-transform: uppercase;
+    }
+
+    .div1,
+    .div2,
+    .div3,
+    .div4 {
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+      background-color: gray;
+      margin-bottom: 40px;
+    }
+
+    .divs-container {
+      margin-top: 70px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .div1,
+    .div2,
+    .div3,
+    .div4 {
+      text-align: center;
+      color: white;
+      font-family: sans-serif;
+      font-weight: 600;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <h1 class="title-style">Square Colors</h1>
+    <h2 class="title-style">Cada quadrado tem uma cor, passe o mouse e descubra!</h2>
+    <p>Caso seja curioso, clique!</p>
+  </section>
+
+  <section class="divs-container">
+    <div class="divs-container-top">
+      <div class="div1"></div>
+      <div class="div2"></div>
+    </div>
+    <div class="divs-container-bottom">
+      <div class="div3"></div>
+      <div class="div4"></div>
+    </div>
+  </section>
+
+  <script class="scr-div1">
+    var a = window.document.getElementsByClassName('div1')[0];
+    a.addEventListener('click', clicar);
+    a.addEventListener('mouseenter', entrar);
+    a.addEventListener('mouseout', sair);
+
+    function clicar() {
+      a.innerText = 'Clicou!';
+      a.style.background = 'red';
+    }
+    function entrar() {
+      a.innerText = 'Entrou';
+      a.style.background = 'blue';
+    }
+    function sair() {
+      a.innerText = '';
+      a.style.background = 'gray';
+    }
+
+  </script>
+  <script class="scr-div2">
+    var b = window.document.getElementsByClassName('div2')[0];
+    b.addEventListener('click', clicar);
+    b.addEventListener('mouseenter', entrar);
+    b.addEventListener('mouseout', sair);
+
+    function clicar() {
+      b.innerText = 'Clicou!';
+      b.style.background = 'pink';
+    }
+    function entrar() {
+      b.innerText = 'Entrou';
+      b.style.background = 'yellow';
+    }
+    function sair() {
+      b.innerText = '';
+      b.style.background = 'gray';
+    }
+  </script>
+  <script class="scr-div3">
+    var c = window.document.getElementsByClassName('div3')[0];
+    c.addEventListener('click', clicar);
+    c.addEventListener('mouseenter', entrar);
+    c.addEventListener('mouseout', sair);
+
+    function clicar() {
+      c.innerText = 'Clicou!';
+      c.style.background = 'purple';
+    }
+    function entrar() {
+      c.innerText = 'Entrou';
+      c.style.background = 'orange';
+    }
+    function sair() {
+      c.innerText = '';
+      c.style.background = 'gray';
+    }
+  </script>
+  <script class="scr-div4">
+    var d = window.document.getElementsByClassName('div4')[0];
+    d.addEventListener('click', clicar);
+    d.addEventListener('mouseenter', entrar);
+    d.addEventListener('mouseout', sair);
+
+    function clicar() {
+      d.innerText = 'Clicou!';
+      d.style.background = 'black';
+    }
+    function entrar() {
+      d.innerText = 'Entrou';
+      d.style.background = 'brown';
+    }
+    function sair() {
+      d.innerText = '';
+      d.style.background = 'gray';
+    }
+  </script>
+</body>
+
+</html>
